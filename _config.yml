@@ -99,12 +99,6 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: keep
-theme_config:
-  base_info:
-    title: eguchi's blog
-    author: eguchi
-    url: http://blog.eguchi00.me
-
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -113,3 +107,11 @@ deploy:
   repo: git@github.com:Eguchi-shinichi/Eguchi-shinichi.github.io.git
   branch: hexo
   message:
+
+# Search
+## See: https://github.com/theme-next/hexo-generator-searchdb
+search:
+  path: search.json
+  field: post
+  content: true
+  format: striptags
