@@ -9,7 +9,7 @@
     
     <title>
         
-            世界，你好——HEXO+GitHubPige搭建个人博客 |
+            世界，你好——HEXO+GitHubPige 搭建个人博客 |
         
         eguchi&#39;s blog
     </title>
@@ -154,7 +154,7 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation">世界，你好——HEXO+GitHubPige搭建个人博客</span>
+            <span class="title-hover-animation">世界，你好——HEXO+GitHubPige 搭建个人博客</span>
         </div>
 
         
@@ -191,50 +191,52 @@
         <div class="article-content markdown-body">
             <h2 id="事前准备"><a href="#事前准备" class="headerlink" title="事前准备"></a>事前准备</h2><ul>
 <li>Git</li>
-<li>GitHub帐号</li>
+<li>GitHub 帐号</li>
 <li>一个域名（可选）</li>
 </ul>
 <hr>
-<h2 id="GitHub方面"><a href="#GitHub方面" class="headerlink" title="GitHub方面"></a>GitHub方面</h2><h4 id="1-创建一个新repository"><a href="#1-创建一个新repository" class="headerlink" title="1. 创建一个新repository"></a>1. 创建一个新<em>repository</em></h4><p>名字必须是<code>username.github.io</code>，在我的情况就是这样创建：</p>
+<h2 id="GitHub方面"><a href="#GitHub方面" class="headerlink" title="GitHub方面"></a>GitHub方面</h2><h4 id="1-创建一个新-repository"><a href="#1-创建一个新-repository" class="headerlink" title="1. 创建一个新 repository"></a>1. 创建一个新 repository</h4><p>名字必须是 <code>username.github.io</code> ，在我的情况就是这样创建：</p>
 <img src="/2022/05/01/%E4%B8%96%E7%95%8C%EF%BC%8C%E4%BD%A0%E5%A5%BD%E2%80%94%E2%80%94HEXO+GitHubPige%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/creat.png" class="">
-<h4 id="2-修改branch"><a href="#2-修改branch" class="headerlink" title="2. 修改branch"></a>2. 修改<em>branch</em></h4><p>进入这个<em>repository</em>的<em>setting</em>，在<em>pages</em>页中<em>source</em>，<em>beanch</em>推荐改为<code>hexo</code>，之后在<strong>Hexo</strong>方面的对应设置中也要修改</p>
+<h4 id="2-修改-branch"><a href="#2-修改-branch" class="headerlink" title="2. 修改 branch"></a>2. 修改 branch</h4><p>进入这个 repository 的 setting，在 pages 页中 source，branch 推荐改为 <code>hexo</code> ，之后在 <strong>Hexo</strong> 方面的对应设置中也要修改</p>
 <img src="/2022/05/01/%E4%B8%96%E7%95%8C%EF%BC%8C%E4%BD%A0%E5%A5%BD%E2%80%94%E2%80%94HEXO+GitHubPige%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/branch.png" class="">
-<h4 id="3-自定义域名"><a href="#3-自定义域名" class="headerlink" title="3. 自定义域名"></a>3. 自定义域名</h4><p>修改同一页的<em>custom domian</em>为自己域名的二级域名，没有域名可以忽略</p>
+<h4 id="3-自定义域名"><a href="#3-自定义域名" class="headerlink" title="3. 自定义域名"></a>3. 自定义域名</h4><p>修改同一页的 <code>custom domian</code> 为自己域名的二级域名，没有域名可以忽略</p>
 <img src="/2022/05/01/%E4%B8%96%E7%95%8C%EF%BC%8C%E4%BD%A0%E5%A5%BD%E2%80%94%E2%80%94HEXO+GitHubPige%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/domain.png" class="">
 
 <p>好了！在GitHub这边要做的事已经完了！</p>
 <hr>
 <h2 id="Hexo方面"><a href="#Hexo方面" class="headerlink" title="Hexo方面"></a>Hexo方面</h2><h4 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h4><ul>
-<li>安装Node.js （可参考hexo官网：<a href="hexo.io"></a>)</li>
+<li>安装 Node.js （可参考 hexo 官网：<a href="hexo.io"></a>)</li>
 </ul>
-<p><em>推荐使用nvm安装，否则易出现<code>EACCES</code>权限错误</em>（出现<code>EACCES</code>权限错误时，应当遵循<a class="link"   target="_blank" rel="noopener" href="https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally" >由npmjs发布的指导<i class="fas fa-external-link-alt"></i></a>修复该问题。强烈建议<strong>不要</strong>使用root、sudo等方法覆盖权限）<br><strong>以下假设使用<a class="link"   target="_blank" rel="noopener" href="https://github.com/nvm-sh/nvm" >nvm<i class="fas fa-external-link-alt"></i></a>安装</strong></p>
+<p><em>推荐使用 <code>nvm</code> 安装，否则易出现 <code>EACCES</code> 权限错误</em>（出现<code>EACCES</code>权限错误时，应当遵循<a class="link"   target="_blank" rel="noopener" href="https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally" >由npmjs发布的指导<i class="fas fa-external-link-alt"></i></a>修复该问题。强烈建议<strong>不要</strong>使用 root、sudo等方法覆盖权限）<br><strong>以下假设使用<a class="link"   target="_blank" rel="noopener" href="https://github.com/nvm-sh/nvm" >nvm<i class="fas fa-external-link-alt"></i></a>安装</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 安装nvm</span><br><span class="line">$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash</span><br><span class="line"># 安装Node</span><br><span class="line">$ nvm install node</span><br></pre></td></tr></table></figure>
 <ul>
-<li>安装Hexo</li>
+<li>安装 Hexo</li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-<h4 id="2-Hexo新建项目"><a href="#2-Hexo新建项目" class="headerlink" title="2. Hexo新建项目"></a>2. Hexo新建项目</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;myblog&gt;</span><br><span class="line">$ cd &lt;myblog&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+<h4 id="2-Hexo-新建项目"><a href="#2-Hexo-新建项目" class="headerlink" title="2. Hexo 新建项目"></a>2. Hexo 新建项目</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;myblog&gt;</span><br><span class="line">$ cd &lt;myblog&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
 <ul>
-<li>新建完成后，<em>myblog</em>文件夹的目录如下：</li>
+<li>新建完成后，<code>myblog</code> 文件夹的目录如下：</li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
-<h4 id="3-安装依赖"><a href="#3-安装依赖" class="headerlink" title="3. 安装依赖"></a>3. 安装依赖</h4><p>安装<code>hexo-deployer-git</code>依赖库，这样才可以配合GitHubPage建站</p>
+<h4 id="3-安装依赖"><a href="#3-安装依赖" class="headerlink" title="3. 安装依赖"></a>3. 安装依赖</h4><p>安装 <code>hexo-deployer-git</code> 依赖库，这样才可以配合 GitHubPage建站</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<h4 id="4-修改-config-yml配置"><a href="#4-修改-config-yml配置" class="headerlink" title="4. 修改_config.yml配置"></a>4. 修改<code>_config.yml</code>配置</h4><ul>
-<li>修改<code>deploy</code> (请确认giehub已配置当前机器密钥)<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: &#x27;git&#x27;</span><br><span class="line">  repo: git@github.com:username/username.github.io.git #修改成刚才新建的repository地址</span><br><span class="line">  branch: hexo</span><br><span class="line">  message: #自定义提交信息</span><br></pre></td></tr></table></figure></li>
-<li>修改<code>Url</code></li>
+<h4 id="4-修改-config-yml-配置"><a href="#4-修改-config-yml-配置" class="headerlink" title="4. 修改 _config.yml 配置"></a>4. 修改 <code>_config.yml</code> 配置</h4><ul>
+<li>修改 <code>deploy</code> (请确认giehub已配置当前机器密钥)<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: &#x27;git&#x27;</span><br><span class="line">  repo: git@github.com:username/username.github.io.git #修改成刚才新建的repository地址</span><br><span class="line">  branch: hexo</span><br><span class="line">  message: #自定义提交信息</span><br></pre></td></tr></table></figure></li>
+<li>修改 <code>Url</code></li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">url: http://name.domain</span><br><span class="line">root: /</span><br></pre></td></tr></table></figure>
 
-<h4 id="5-source目录下，创建CNAME文件"><a href="#5-source目录下，创建CNAME文件" class="headerlink" title="5. source目录下，创建CNAME文件"></a>5. <code>source</code>目录下，创建<code>CNAME</code>文件</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># myblog/source/CNAME</span><br><span class="line">myblog.name.domain</span><br></pre></td></tr></table></figure>
-<h4 id="6-Hexo常用命令"><a href="#6-Hexo常用命令" class="headerlink" title="6. Hexo常用命令"></a>6. Hexo常用命令</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s #在http://localhost:4000启动服务器</span><br><span class="line">$ hexo g #生成静态文件</span><br><span class="line">$ hexo d #将生成的静态文件推送至GitHub</span><br><span class="line">$ hexo clean #清除站点文件，建议生成静态文件之前都执行一下</span><br></pre></td></tr></table></figure>
+<h4 id="5-source-目录下，创建-CNAME-文件"><a href="#5-source-目录下，创建-CNAME-文件" class="headerlink" title="5. source 目录下，创建 CNAME 文件"></a>5. <code>source</code> 目录下，创建 <code>CNAME</code> 文件</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># myblog/source/CNAME</span><br><span class="line">myblog.name.domain</span><br></pre></td></tr></table></figure>
+<h4 id="6-Hexo常用命令"><a href="#6-Hexo常用命令" class="headerlink" title="6. Hexo常用命令"></a>6. Hexo常用命令</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s #在http://localhost:4000启动服务器</span><br><span class="line">$ hexo g #生成静态文件</span><br><span class="line">$ hexo d #将生成的静态文件推送至 GitHub</span><br><span class="line">$ hexo clean #清除站点文件，建议生成静态文件之前都执行一下</span><br></pre></td></tr></table></figure>
 
 <hr>
 <h2 id="域名方面"><a href="#域名方面" class="headerlink" title="域名方面"></a>域名方面</h2><ol>
-<li>在域名解析中添加一条<code>CNAME</code>记录<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">记录类型：CNAME</span><br><span class="line">主机记录：myblog #自定义二级域名</span><br><span class="line">记录值：uername.github.io</span><br></pre></td></tr></table></figure></li>
+<li>在域名解析中添加一条 <code>CNAME</code> 记录</li>
 </ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">记录类型：CNAME</span><br><span class="line">主机记录：myblog #自定义二级域名</span><br><span class="line">记录值：uername.github.io</span><br></pre></td></tr></table></figure>
+
 <hr>
-<p>啊哈！这样就能从自定义的域名myblog.name.domain访问博客了！</p>
+<p>啊哈！这样就能从自定义的域名 myblog.name.domain 访问博客了！</p>
 
         </div>
 
@@ -242,7 +244,7 @@
             <div class="post-copyright-info">
                 <div class="article-copyright-info-container">
     <ul>
-        <li>本文标题：世界，你好——HEXO+GitHubPige搭建个人博客</li>
+        <li>本文标题：世界，你好——HEXO+GitHubPige 搭建个人博客</li>
         <li>本文作者：eguchi</li>
         <li>创建时间：2022-05-01 22:47:15</li>
         <li>
@@ -360,7 +362,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8B%E5%89%8D%E5%87%86%E5%A4%87"><span class="nav-number">1.</span> <span class="nav-text">事前准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub%E6%96%B9%E9%9D%A2"><span class="nav-number">2.</span> <span class="nav-text">GitHub方面</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E6%96%B0repository"><span class="nav-number">2.0.1.</span> <span class="nav-text">1. 创建一个新repository</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-%E4%BF%AE%E6%94%B9branch"><span class="nav-number">2.0.2.</span> <span class="nav-text">2. 修改branch</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D"><span class="nav-number">2.0.3.</span> <span class="nav-text">3. 自定义域名</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo%E6%96%B9%E9%9D%A2"><span class="nav-number">3.</span> <span class="nav-text">Hexo方面</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E5%AE%89%E8%A3%85"><span class="nav-number">3.0.1.</span> <span class="nav-text">1. 安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Hexo%E6%96%B0%E5%BB%BA%E9%A1%B9%E7%9B%AE"><span class="nav-number">3.0.2.</span> <span class="nav-text">2. Hexo新建项目</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96"><span class="nav-number">3.0.3.</span> <span class="nav-text">3. 安装依赖</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-%E4%BF%AE%E6%94%B9-config-yml%E9%85%8D%E7%BD%AE"><span class="nav-number">3.0.4.</span> <span class="nav-text">4. 修改_config.yml配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-source%E7%9B%AE%E5%BD%95%E4%B8%8B%EF%BC%8C%E5%88%9B%E5%BB%BACNAME%E6%96%87%E4%BB%B6"><span class="nav-number">3.0.5.</span> <span class="nav-text">5. source目录下，创建CNAME文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-Hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="nav-number">3.0.6.</span> <span class="nav-text">6. Hexo常用命令</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%9F%E5%90%8D%E6%96%B9%E9%9D%A2"><span class="nav-number">4.</span> <span class="nav-text">域名方面</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8B%E5%89%8D%E5%87%86%E5%A4%87"><span class="nav-number">1.</span> <span class="nav-text">事前准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub%E6%96%B9%E9%9D%A2"><span class="nav-number">2.</span> <span class="nav-text">GitHub方面</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E6%96%B0-repository"><span class="nav-number">2.0.1.</span> <span class="nav-text">1. 创建一个新 repository</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-%E4%BF%AE%E6%94%B9-branch"><span class="nav-number">2.0.2.</span> <span class="nav-text">2. 修改 branch</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D"><span class="nav-number">2.0.3.</span> <span class="nav-text">3. 自定义域名</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo%E6%96%B9%E9%9D%A2"><span class="nav-number">3.</span> <span class="nav-text">Hexo方面</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E5%AE%89%E8%A3%85"><span class="nav-number">3.0.1.</span> <span class="nav-text">1. 安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Hexo-%E6%96%B0%E5%BB%BA%E9%A1%B9%E7%9B%AE"><span class="nav-number">3.0.2.</span> <span class="nav-text">2. Hexo 新建项目</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96"><span class="nav-number">3.0.3.</span> <span class="nav-text">3. 安装依赖</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-%E4%BF%AE%E6%94%B9-config-yml-%E9%85%8D%E7%BD%AE"><span class="nav-number">3.0.4.</span> <span class="nav-text">4. 修改 _config.yml 配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-source-%E7%9B%AE%E5%BD%95%E4%B8%8B%EF%BC%8C%E5%88%9B%E5%BB%BA-CNAME-%E6%96%87%E4%BB%B6"><span class="nav-number">3.0.5.</span> <span class="nav-text">5. source 目录下，创建 CNAME 文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-Hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="nav-number">3.0.6.</span> <span class="nav-text">6. Hexo常用命令</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%9F%E5%90%8D%E6%96%B9%E9%9D%A2"><span class="nav-number">4.</span> <span class="nav-text">域名方面</span></a></li></ol>
     </div>
 </div>
         </aside>
