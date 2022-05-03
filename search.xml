@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>世界，你好——HEXO+GitHubPige 搭建个人博客</title>
+    <title>世界，你好——HEXO+GitHubPege 搭建个人博客</title>
     <url>/2022/05/01/%E4%B8%96%E7%95%8C%EF%BC%8C%E4%BD%A0%E5%A5%BD%E2%80%94%E2%80%94HEXO+GitHubPige%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<h2 id="事前准备"><a href="#事前准备" class="headerlink" title="事前准备"></a>事前准备</h2><ul>
 <li>Git</li>
@@ -10,11 +10,11 @@
 </ul>
 <hr>
 <h2 id="GitHub方面"><a href="#GitHub方面" class="headerlink" title="GitHub方面"></a>GitHub方面</h2><h4 id="1-创建一个新-repository"><a href="#1-创建一个新-repository" class="headerlink" title="1. 创建一个新 repository"></a>1. 创建一个新 repository</h4><p>名字必须是 <code>username.github.io</code> ，在我的情况就是这样创建：</p>
-<img src="/2022/05/01/%E4%B8%96%E7%95%8C%EF%BC%8C%E4%BD%A0%E5%A5%BD%E2%80%94%E2%80%94HEXO+GitHubPige%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/creat.png" class="">
+
 <h4 id="2-修改-branch"><a href="#2-修改-branch" class="headerlink" title="2. 修改 branch"></a>2. 修改 branch</h4><p>进入这个 repository 的 setting，在 pages 页中 source，branch 推荐改为 <code>hexo</code> ，之后在 <strong>Hexo</strong> 方面的对应设置中也要修改</p>
-<img src="/2022/05/01/%E4%B8%96%E7%95%8C%EF%BC%8C%E4%BD%A0%E5%A5%BD%E2%80%94%E2%80%94HEXO+GitHubPige%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/branch.png" class="">
+
 <h4 id="3-自定义域名"><a href="#3-自定义域名" class="headerlink" title="3. 自定义域名"></a>3. 自定义域名</h4><p>修改同一页的 <code>custom domian</code> 为自己域名的二级域名，没有域名可以忽略</p>
-<img src="/2022/05/01/%E4%B8%96%E7%95%8C%EF%BC%8C%E4%BD%A0%E5%A5%BD%E2%80%94%E2%80%94HEXO+GitHubPige%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/domain.png" class="">
+
 
 <p>好了！在GitHub这边要做的事已经完了！</p>
 <hr>
