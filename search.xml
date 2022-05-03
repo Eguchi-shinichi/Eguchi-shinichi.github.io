@@ -21,7 +21,7 @@
 <h2 id="Hexo方面"><a href="#Hexo方面" class="headerlink" title="Hexo方面"></a>Hexo方面</h2><h4 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h4><ul>
 <li>安装 Node.js （可参考 hexo 官网：<a href="hexo.io"></a>)</li>
 </ul>
-<p><em>推荐使用 <code>nvm</code> 安装，否则易出现 <code>EACCES</code> 权限错误</em>（出现<code>EACCES</code>权限错误时，应当遵循<a class="link"   href="https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally" >由npmjs发布的指导<i class="fas fa-external-link-alt"></i></a>修复该问题。强烈建议<strong>不要</strong>使用 root、sudo等方法覆盖权限）<br><strong>以下假设使用<a class="link"   href="https://github.com/nvm-sh/nvm" >nvm<i class="fas fa-external-link-alt"></i></a>安装</strong></p>
+<p><em>推荐使用 <code>nvm</code> 安装，否则易出现 <code>EACCES</code> 权限错误</em>（出现<code>EACCES</code>权限错误时，应当遵循<a class="link"   href="https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally" >由npmjs发布的指导<i class="fas fa-external-link-alt"></i></a>修复该问题。强烈建议<strong>不要</strong>使用 root、sudo 等方法覆盖权限）<br><strong>以下假设使用<a class="link"   href="https://github.com/nvm-sh/nvm" >nvm<i class="fas fa-external-link-alt"></i></a>安装</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 安装nvm</span><br><span class="line">$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash</span><br><span class="line"># 安装Node</span><br><span class="line">$ nvm install node</span><br></pre></td></tr></table></figure>
 <ul>
 <li>安装 Hexo</li>
@@ -47,7 +47,7 @@
 <h2 id="域名方面"><a href="#域名方面" class="headerlink" title="域名方面"></a>域名方面</h2><ol>
 <li>在域名解析中添加一条 <code>CNAME</code> 记录</li>
 </ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">记录类型：CNAME</span><br><span class="line">主机记录：myblog #自定义二级域名</span><br><span class="line">记录值：uername.github.io</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">记录类型：CNAME</span><br><span class="line">主机记录：myblog #自定义二级域名</span><br><span class="line">记录值：username.github.io</span><br></pre></td></tr></table></figure>
 
 <hr>
 <p>啊哈！这样就能从自定义的域名 myblog.name.domain 访问博客了！</p>
