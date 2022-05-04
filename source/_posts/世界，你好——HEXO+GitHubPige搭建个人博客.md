@@ -1,5 +1,5 @@
 ---
-title: 世界，你好——HEXO+GitHubPige 搭建个人博客
+title: 世界，你好——HEXO+GitHubPage 搭建个人博客
 date: 2022-05-01 22:47:15
 tags:
 ---
@@ -29,7 +29,7 @@ tags:
 ## Hexo方面
 #### 1. 安装
 - 安装 Node.js （可参考 hexo 官网：[](hexo.io))
-*推荐使用 `nvm` 安装，否则易出现 `EACCES` 权限错误*（出现`EACCES`权限错误时，应当遵循[由npmjs发布的指导](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally)修复该问题。强烈建议**不要**使用 root、sudo等方法覆盖权限）
+*推荐使用 `nvm` 安装，否则易出现 `EACCES` 权限错误*（出现`EACCES`权限错误时，应当遵循[由npmjs发布的指导](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally)修复该问题。强烈建议**不要**使用 root、sudo 等方法覆盖权限）
 **以下假设使用[nvm](https://github.com/nvm-sh/nvm)安装**
 ```
 # 安装nvm
@@ -104,7 +104,7 @@ $ hexo clean #清除站点文件，建议生成静态文件之前都执行一下
 ```
 记录类型：CNAME
 主机记录：myblog #自定义二级域名
-记录值：uername.github.io
+记录值：username.github.io
 ```
 
 ---
